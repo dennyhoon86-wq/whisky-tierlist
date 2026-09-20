@@ -406,6 +406,7 @@
   body,button,input,select,textarea{font-family:var(--ui)!important;}
   h1,.tier-title,.archive-intro h2,.detail-title,.empty-title{font-family:var(--ui)!important;letter-spacing:-.035em!important;}
   h1{font-size:clamp(25px,5vw,34px)!important;font-weight:750!important;background:none!important;color:var(--text)!important;-webkit-text-fill-color:var(--text)!important;filter:none!important;}
+  .home-link{display:inline-block;text-decoration:none;color:inherit;cursor:pointer;}.home-link:hover{color:var(--accent-bright);}.home-link:focus-visible{outline:2px solid var(--accent);outline-offset:5px;border-radius:3px;}
   .eyebrow,.archive-eyebrow{font-family:var(--mono)!important;letter-spacing:.13em!important;}.item-abbr,.item-price,.detail-tier{font-family:var(--ui)!important;letter-spacing:-.015em!important;}
   .btn,.chip,.quick-filter{border-radius:7px!important;}.tier-section,.archive-intro,.archive-stat{box-shadow:none!important;}
   /* Readability pass: prevent clipped names and keep the map axis labels distinct. */
@@ -431,7 +432,7 @@
   <div class="pour-line"></div>
   <div class="wrap header-top">
     <p class="eyebrow">PERSONAL WHISKY ARCHIVE</p>
-    <h1>위스키 티어리스트</h1>
+    <h1><a class="home-link" href="/" aria-label="위스키 티어리스트 홈으로">위스키 티어리스트</a></h1>
     <p class="subtitle" id="subtitle"></p>
     <div class="spectrum" id="spectrum"></div>
 
