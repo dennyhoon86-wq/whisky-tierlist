@@ -6,7 +6,8 @@
 <title>위스키 티어리스트</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@400;500;600;700;900&family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css">
 <style>
   :root{
     --bg:#0a0810;
@@ -22,7 +23,8 @@
     --accent-bright:#e8c874;
     --accent-soft:rgba(201,162,75,0.15);
     --oxblood:#7a1f2b;
-    --mono:'IBM Plex Mono', ui-monospace, monospace;
+    --ui:'Inter','Pretendard Variable','Pretendard','Noto Sans KR',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    --mono:var(--ui);
 
     --t-sss-bg:#1c1509; --t-sss-fg:#f0cf74; --t-sss-bd:#f0cf74;
     --t-ss-bg:#7a1f2b;  --t-ss-fg:#fbeef0;  --t-ss-bd:#c96a78;
@@ -44,7 +46,7 @@
       url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E"),
       var(--bg);
     color:var(--text);
-    font-family:'Noto Sans KR', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+    font-family:var(--ui);
     -webkit-font-smoothing:antialiased;
     min-height:100vh;
     font-variant-numeric:tabular-nums;
@@ -75,7 +77,7 @@
     margin:0 0 8px; font-weight:600; opacity:0.75;
   }
   h1{
-    font-family:'Nanum Myeongjo', serif;
+    font-family:var(--ui);
     font-weight:800;
     font-size:clamp(26px,6vw,38px);
     letter-spacing:-0.01em;
@@ -400,7 +402,7 @@
 
 
   /* Reset the decorative archive typography to a clean product UI. */
-  :root{--ui:"Pretendard Variable",Pretendard,"Inter",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Segoe UI",Arial,sans-serif;--mono:"SFMono-Regular",Consolas,"Liberation Mono",monospace;}
+  :root{--ui:"Inter","Pretendard Variable",Pretendard,"Noto Sans KR",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;--mono:var(--ui);}
   body,button,input,select,textarea{font-family:var(--ui)!important;}
   h1,.tier-title,.archive-intro h2,.detail-title,.empty-title{font-family:var(--ui)!important;letter-spacing:-.035em!important;}
   h1{font-size:clamp(25px,5vw,34px)!important;font-weight:750!important;background:none!important;color:var(--text)!important;-webkit-text-fill-color:var(--text)!important;filter:none!important;}
